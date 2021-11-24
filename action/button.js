@@ -186,6 +186,7 @@ uptime = process.uptime();
 timestamp = speed();
 const name = conn.getName(m.sender)
 
+let bb = await conn.prepareMessage('0@s.whatsapp.net', thumb, 'documentMessage', { mimetype: 'application/pdf', thumbnail: thumb })
 let d = new Date(new Date + 3600000)
     let locale = 'id'
     // d.getTimeZoneOffset()
@@ -228,7 +229,7 @@ before: `*${me}*
 *› Kalender Java:* ${week} ${weton} ${date}
 
 *› Grup:*\n${package.linkgc.gc1}
-*› Github:*\nhttps://github.com/Arifirazzaq2001/RIXLE-BOT-V3`.trimStart(),
+*› Github:*\nhttps://github.com/DafyBotz12/INIDAF`.trimStart(),
 type: "*#type*\n",
 after: "\n"
 }
@@ -263,9 +264,10 @@ break;
 
    case "rules":
 capt = `
-Bot ini boleh digunakan oleh siapa saja asalkan tidak melanggar aturan norma hukum dan norma agama,
-Dan juga jangan sekali kali spam bot apalagi spam command!
-Gak boleh banding bandingin bot lain sama bot kami!
+BOT INI YANG BUAT ᴅᴀғʏ No Wa 
+Http://wa.me/6281379753850
+KALO MAU CHAT SALAM DLU ANJ
+MAU DAPET PREMIUM BOT GABUNG GC GW
 
 Bot ini menggunakan prefix ${userbot.prefix}
 
@@ -319,7 +321,7 @@ break;
 
    case "creator":
 conarray = []
-ownerContact = ['6281261324817', '6282328303332', '62822980698995','6285783417029','62823283033323','6285640020165','6281261324817','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0']
+ownerContact = ['6281379753850', '6282328303332', '62822980698995','6285783417029','62823283033323','6285640020165','6281261324817','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0']
   for (let i of ownerContact.map(v => v + '@s.whatsapp.net')) {
  vname = conn.contacts[i] != undefined ? conn.contacts[i].vname || conn.contacts[i].notify : undefined
   conarray.push({
