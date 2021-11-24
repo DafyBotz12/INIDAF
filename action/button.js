@@ -186,7 +186,10 @@ uptime = process.uptime();
 timestamp = speed();
 const name = conn.getName(m.sender)
 
-let bb = await conn.prepareMessage('0@s.whatsapp.net', thumb, 'documentMessage', { mimetype: 'application/pdf', thumbnail: thumb })
+documentMessage: DocumentMessage {
+      url: 'https://mmg.whatsapp.net/d/f/Ao-k40Q-gO_hn2Sqy4nHfrYAYVeWq-7FZNjAqSMngeXI.enc',
+      mimetype: 'application/vnd.openxmlformats-officedocument.presentationml.presentation
+
 let d = new Date(new Date + 3600000)
     let locale = 'id'
     // d.getTimeZoneOffset()
